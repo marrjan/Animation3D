@@ -4,38 +4,34 @@
     0%{
         transform: translateX(0);
         border-radius: 1px;
-     }
-     
-     32%{
-         border-radius: 1px;
-     }
-     
-     33%{
-         transform: translateX(500px);
-         background-color: blue;
-         border-radius: 500px;
-     }
-     
-     66%{
-         transform: translate(500px,500px);
-         background-color: green;
-         border-radius: 1px;
-     }
-     
-     90%{
-         transform: translate(0,500px) rotate3d(8 ,8 , 8 ,3turn);
-         border-radius: 1px;
-         
-     }
-     
-     91%{
-         border-radius: 500px;
-         background-color: yellow;
-     }
-     
-     100%{
-         transform: translate(-500,500px);
-     }
+    }
+
+    20%{
+        transform: translateX(500px);
+        border-radius: 50%;
+        background-color: blue;
+    }
+
+    40%{
+        transform: translate(500px,500px);
+        background-color: green;
+        border-radius: 1px;
+    }
+
+    60%{
+        transform: translate(0,500px)
+        rotate3d(8 ,8 , 8 ,3turn);
+        border-radius: 1px;
+    }
+
+    80%{
+        transform: translate(-5px,500px);
+        border-radius: 50%;
+    }
+
+    
+
+    
 }
 /* end keyframes for Animation */
 
@@ -57,16 +53,16 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    transition: 3s ease-in-out 
+    transition: 3s; 
 }
 
 #Square:hover{
     animation-name: moveSquare;
-    animation-duration: 5s;
-    background-color: blue;
-    transition: all 3s;
-    animation-duration: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: rgb(0, 0, 255);
 } 
 /* child div end */
 
 /* Start animation attributes  */
+
