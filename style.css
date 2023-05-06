@@ -1,0 +1,72 @@
+/* Start keyframes for Animation */
+@keyframes moveSquare{
+   
+    0%{
+        transform: translateX(0);
+        border-radius: 1px;
+     }
+     
+     32%{
+         border-radius: 1px;
+     }
+     
+     33%{
+         transform: translateX(500px);
+         background-color: blue;
+         border-radius: 500px;
+     }
+     
+     66%{
+         transform: translate(500px,500px);
+         background-color: green;
+         border-radius: 1px;
+     }
+     
+     90%{
+         transform: translate(0,500px) rotate3d(8 ,8 , 8 ,3turn);
+         border-radius: 1px;
+         
+     }
+     
+     91%{
+         border-radius: 500px;
+         background-color: yellow;
+     }
+     
+     100%{
+         transform: translate(-500,500px);
+     }
+}
+/* end keyframes for Animation */
+
+
+/* Start animation attributes  */
+
+/* parent div start */
+.parent{
+    background-color: rgb(2, 2, 49);
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+/* parent div end  */
+
+
+/* child div start */
+#Square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 3s ease-in-out 
+}
+
+#Square:hover{
+    animation-name: moveSquare;
+    animation-duration: 5s;
+    background-color: blue;
+    transition: all 3s;
+    animation-duration: 5s;
+} 
+/* child div end */
+
+/* Start animation attributes  */
